@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra, papel, tijera, lagarto, spock</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/e9c34022b4.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="page">
+    <header class="header">
+      <section>
+        <h1 class="header__title">Piedra - papel - tijera - lagarto - spock</h1>
+      </section>
+      <h3 class="header__subtitle">El mejor de 10 partidas gana</h3>
+      <button class="header__buttonReset">Inicia otra partida</button>
+      <div class="header__counter">Partidas: 0</div>
+    </header>
+    <main class="main">
+      <section class="main__human">
+        <h1 class="main__humanTitle">Elije una opción:</h1>
+        <div class="main__humanCounter">Ganadas: 0</div>
+        <button class="main__option" onclick="option(0)">
+          Piedra
+          <i class="far fa-gem main__icon"></i>
+        </button>
+        <button class="main__option" onclick="option(1)">
+          Papel
+          <i class="far fa-hand-paper main__icon"></i>
+        </button>
+        <button class="main__option" onclick="option(2)">
+          Tijera
+          <i class="far fa-hand-scissors main__icon"></i>
+        </button>
+        <button class="main__option" onclick="option(3)">
+          Lagarto
+          <i class="far fa-hand-lizard main__icon"></i>
+        </button>
+        <button class="main__option" onclick="option(4)">
+          Spock
+          <i class="far fa-hand-spock main__icon"></i>
+        </button>
+      </section>
+      <section class="main__computer">
+        <h1 class="main__computerTitle">El ordenador elije:</h1>
+        <div class="main__computerCounter">Ganadas: 0</div>
+
+        <div class="main__computerLoading">
+          <i class="fas fa-atom main__loading js-loading"></i>
+        </div>
+      </section>
+    </main>
+    <section class="main__results js-results"></section>
+    <section class="main__fullResult js-fullResultWin">
+      <div class="main__container">
+        <i class="fas fa-times main__close js-close"></i>
+        <h1 class="main__win">Has ganaddo</h1>
+        <img
+          class="main__winGif"
+          src="https://media.giphy.com/media/o75ajIFH0QnQC3nCeD/giphy.gif"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="main__fullResult js-fullResultLose">
+      <div class="main__container">
+        <i class="fas fa-times main__close js-close"></i>
+        <h1 class="main__win">Intentalo de nuevo</h1>
+        <img
+          class="main__winGif"
+          src="https://media.giphy.com/media/26gQZVvtZ6TR1EMlW/giphy-downsized.gif"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="main__fullResult js-fullResultEqual">
+      <div class="main__container">
+        <i class="fas fa-times main__close js-close"></i>
+        <h1 class="main__win"></h1>
+        <img
+          class="main__winGif"
+          src="https://media.giphy.com/media/Q0L0TSjGybeuY/giphy.gif"
+          alt=""
+        />
+      </div>
+    </section>
+    <footer class="footer">
+      <a href="raquelgc8@gmail.com" class="footer--social" target="_blank" title="Email">
+        <i class="far fa-envelope footer--icons"></i>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/raquelgarciacaja/"
+        class="js-icon-linkedin footer--social"
+        target="_blank"
+        title="Linkedin"
+      >
+        <i class="footer--icons fab fa-linkedin-in"></i>
+      </a>
+      <a
+        href="https://github.com/RaquelGarciaCaja"
+        class="js-icon-github footer--social"
+        target="_blank"
+        title="Github"
+      >
+        <i class="footer--icons fab fa-github-alt"></i>
+      </a>
+    </footer>
+  </body>
+  <script src="js/main.js"></script>
+</html>
