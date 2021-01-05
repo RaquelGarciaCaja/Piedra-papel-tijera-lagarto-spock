@@ -15,15 +15,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 }
+
 .header__title {
   text-transform: uppercase;
-  padding: 8px;
+  text-align: center;
+  border: 2px solid black;
+  font-size: 20px;
+}
+@media all and (min-width: 768px) {
+  .header__title {
+    border: 1px solid black;
+    padding: 8px;
+  }
 }
 
 .header__subtitle {
   padding: 8px;
+  text-align: center;
 }
 
 .header__buttonReset {
@@ -34,11 +44,17 @@
 
 .main {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   border: 2px solid black;
   margin: 0 25px;
 }
 
+@media all and (min-width: 768px) {
+  .main {
+    flex-direction: row;
+  }
+}
 .main__human {
   display: flex;
   flex-direction: column;
@@ -78,8 +94,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 11px;
 }
 
+@media all and (min-width: 768px) {
+  .main__loading {
+    padding-bottom: 0;
+  }
+}
 .main__loading {
   font-size: 100px;
   animation-name: loading;
