@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" href="images/.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/scissor.png" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/e9c34022b4.js" crossorigin="anonymous"></script>
   </head>
   <body class="page">
@@ -15,8 +16,40 @@
       <section>
         <h1 class="header__title">Piedra - papel - tijera - lagarto - spock</h1>
       </section>
-      <h3 class="header__subtitle">Al mejor de 10</h3>
-      <button class="header__buttonReset">Inicia otra partida</button>
+      <h3 class="header__subtitle">Al mejor de 7</h3>
+      <div class="header__extra">
+        <button class="header__buttonReset">Inicia otra partida</button>
+        <button class="header__buttonRules js-rules">Normas</button>
+        <ul class="header__rules">
+          <div class="header__container">
+            <i class="fas fa-times header__close js-close"></i>
+            <h4 class="header__rules--title">
+              Normas del juego de la serie <span class="header__serie">the big bang theory</span>
+            </h4>
+            <li class="header__eachRule">
+              Las tijeras cortan el papel - Gana: <i class="far fa-hand-scissors main__icon"></i>
+            </li>
+            <li class="header__eachRule">El papel cubre a la piedra - Gana: <i class="far fa-hand-paper main__icon"></i>
+            </li></li>
+            <li class="header__eachRule">La piedra aplasta las tijeras - Gana: <i class="far fa-gem main__icon"></i>
+            </li></li>
+            <li class="header__eachRule">La piedra aplasta al lagarto - Gana: <i class="far fa-gem main__icon"></i>
+            </li></li>
+            <li class="header__eachRule">El lagarto envenena a Spock - Gana: <i class="far fa-hand-lizard main__icon"></i>
+            </li></li>
+            <li class="header__eachRule">Spock destroza las tijeras - Gana: <i class="far fa-hand-spock main__icon"></i>
+            </li></li>
+            <li class="header__eachRule">Las tijeras decapitan al lagarto - Gana: <i class="far fa-hand-scissors main__icon"></i>
+            </li></li>
+            <li class="header__eachRule">El lagarto se come el papel - Gana: <i class="far fa-hand-lizard main__icon"></i>
+            </li></li>
+            <li class="header__eachRule">El papel desautoriza a Spock - Gana: <i class="far fa-hand-paper main__icon"></i>
+            </li></li>
+            <li class="header__eachRule">Spock vaporiza la piedra - Gana: <i class="far fa-hand-spock main__icon"></i>
+            </li></li>
+          </div>
+        </ul>
+      </div>
       <div class="header__counter">Partidas: 0</div>
     </header>
     <main class="main">
@@ -76,17 +109,7 @@
         />
       </div>
     </section>
-    <section class="main__fullResult js-fullResultEqual">
-      <div class="main__container">
-        <i class="fas fa-times main__close js-close"></i>
-        <h1 class="main__win"></h1>
-        <img
-          class="main__winGif"
-          src="https://media.giphy.com/media/Q0L0TSjGybeuY/giphy.gif"
-          alt=""
-        />
-      </div>
-    </section>
+
     <footer class="footer">
       <a href="raquelgc8@gmail.com" class="footer--social" target="_blank" title="Email">
         <i class="far fa-envelope footer--icons"></i>
