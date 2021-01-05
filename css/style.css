@@ -28,6 +28,7 @@
   .header__title {
     border: 1px solid black;
     padding: 8px;
+    font-size: 25px;
   }
 }
 
@@ -58,17 +59,30 @@
 .main__human {
   display: flex;
   flex-direction: column;
-  padding: 5px 50px;
+  align-items: center;
+  padding: 5px 25px;
 }
+
+@media all and (min-width: 768px) {
+  .main__human {
+    padding: 5px 50px;
+  }
+}
+
 .main__humanTitle {
-  padding: 5px 0;
+  padding: 8px 0;
 }
 
 .main__option {
-  padding: 3px 8px;
   margin: 8px 0;
   cursor: pointer;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 176px;
+  height: 36px;
+  padding: 3px;
 }
 .main__option:hover {
   background-color: lightsalmon;
@@ -77,18 +91,26 @@
 .main__computer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 5px 25px;
+}
+
+@media all and (min-width: 768px) {
+  .main__computer {
+    padding: 5px 50px;
+  }
+}
+.main__computerTitle {
+  padding: 8px 0;
 }
 .main__optionComputer {
-  padding: 3px 8px;
+  padding: 3px;
   margin: 8px 0;
   cursor: pointer;
   border-radius: 8px;
   /* quitar cuando ponga los iconos en la elección del ordenador */
   width: 180px;
   height: 40px;
-}
-.main__computerTitle {
-  padding-top: 14px;
 }
 .main__computerLoading {
   display: flex;
@@ -98,7 +120,7 @@
 }
 
 @media all and (min-width: 768px) {
-  .main__loading {
+  .main__computerLoading {
     padding-bottom: 0;
   }
 }
