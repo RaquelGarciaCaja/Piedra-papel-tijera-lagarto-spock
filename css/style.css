@@ -243,7 +243,7 @@
 
 .main__results {
   display: flex;
-  text-align: center;
+  justify-content: center;
 }
 
 @media all and (min-width: 768px) {
@@ -255,6 +255,7 @@
 .main__result {
   padding: 10px;
   font-size: 10px;
+  text-align: center;
 }
 @media all and (min-width: 768px) {
   .main__result {
@@ -289,8 +290,8 @@
   align-items: center;
 }
 .main__winGif {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
 }
 @media all and (min-width: 768px) {
   .main__winGif {
